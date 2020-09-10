@@ -1,3 +1,4 @@
+/data
 .idea
 /target
-geonames-files
+Cargo.lock
