@@ -1,0 +1,250 @@
+alpha2	alpha3	numeric	name	flag
+AF	AFG	004	Afghanistan	data/images/country_flags/AF.svg
+AX	ALA	248	Åland Islands	data/images/country_flags/AX.svg
+AL	ALB	008	Albania	data/images/country_flags/AL.svg
+DZ	DZA	012	Algeria	data/images/country_flags/DZ.svg
+AS	ASM	016	American Samoa	data/images/country_flags/AS.svg
+AD	AND	020	Andorra	data/images/country_flags/AD.svg
+AO	AGO	024	Angola	data/images/country_flags/AO.svg
+AI	AIA	660	Anguilla	data/images/country_flags/AI.svg
+AQ	ATA	010	Antarctica	data/images/country_flags/AQ.svg
+AG	ATG	028	Antigua and Barbuda	data/images/country_flags/AG.svg
+AR	ARG	032	Argentina	data/images/country_flags/AR.svg
+AM	ARM	051	Armenia	data/images/country_flags/AM.svg
+AW	ABW	533	Aruba	data/images/country_flags/AW.svg
+AU	AUS	036	Australia	data/images/country_flags/AU.svg
+AT	AUT	040	Austria	data/images/country_flags/AT.svg
+AZ	AZE	031	Azerbaijan	data/images/country_flags/AZ.svg
+BS	BHS	044	Bahamas	data/images/country_flags/BS.svg
+BH	BHR	048	Bahrain	data/images/country_flags/BH.svg
+BD	BGD	050	Bangladesh	data/images/country_flags/BD.svg
+BB	BRB	052	Barbados	data/images/country_flags/BB.svg
+BY	BLR	112	Belarus	data/images/country_flags/BY.svg
+BE	BEL	056	Belgium	data/images/country_flags/BE.svg
+BZ	BLZ	084	Belize	data/images/country_flags/BZ.svg
+BJ	BEN	204	Benin	data/images/country_flags/BJ.svg
+BM	BMU	060	Bermuda	data/images/country_flags/BM.svg
+BT	BTN	064	Bhutan	data/images/country_flags/BT.svg
+BO	BOL	068	Bolivia (Plurinational State of)	data/images/country_flags/BO.svg
+BQ	BES	535	Bonaire, Sint Eustatius and Saba	data/images/country_flags/BQ.svg
+BA	BIH	070	Bosnia and Herzegovina	data/images/country_flags/BA.svg
+BW	BWA	072	Botswana	data/images/country_flags/BW.svg
+BV	BVT	074	Bouvet Island	data/images/country_flags/BV.svg
+BR	BRA	076	Brazil	data/images/country_flags/BR.svg
+IO	IOT	086	British Indian Ocean Territory	data/images/country_flags/IO.svg
+BN	BRN	096	Brunei Darussalam	data/images/country_flags/BN.svg
+BG	BGR	100	Bulgaria	data/images/country_flags/BG.svg
+BF	BFA	854	Burkina Faso	data/images/country_flags/BF.svg
+BI	BDI	108	Burundi	data/images/country_flags/BI.svg
+CV	CPV	132	Cabo Verde	data/images/country_flags/CV.svg
+KH	KHM	116	Cambodia	data/images/country_flags/KH.svg
+CM	CMR	120	Cameroon	data/images/country_flags/CM.svg
+CA	CAN	124	Canada	data/images/country_flags/CA.svg
+KY	CYM	136	Cayman Islands	data/images/country_flags/KY.svg
+CF	CAF	140	Central African Republic	data/images/country_flags/CF.svg
+TD	TCD	148	Chad	data/images/country_flags/TD.svg
+CL	CHL	152	Chile	data/images/country_flags/CL.svg
+CN	CHN	156	China	data/images/country_flags/CN.svg
+CX	CXR	162	Christmas Island	data/images/country_flags/CX.svg
+CC	CCK	166	Cocos (Keeling) Islands	data/images/country_flags/CC.svg
+CO	COL	170	Colombia	data/images/country_flags/CO.svg
+KM	COM	174	Comoros	data/images/country_flags/KM.svg
+CG	COG	178	Congo	data/images/country_flags/CG.svg
+CD	COD	180	Congo, Democratic Republic of the	data/images/country_flags/CD.svg
+CK	COK	184	Cook Islands	data/images/country_flags/CK.svg
+CR	CRI	188	Costa Rica	data/images/country_flags/CR.svg
+CI	CIV	384	Côte d'Ivoire	data/images/country_flags/CI.svg
+HR	HRV	191	Croatia	data/images/country_flags/HR.svg
+CU	CUB	192	Cuba	data/images/country_flags/CU.svg
+CW	CUW	531	Curaçao	data/images/country_flags/CW.svg
+CY	CYP	196	Cyprus	data/images/country_flags/CY.svg
+CZ	CZE	203	Czechia	data/images/country_flags/CZ.svg
+DK	DNK	208	Denmark	data/images/country_flags/DK.svg
+DJ	DJI	262	Djibouti	data/images/country_flags/DJ.svg
+DM	DMA	212	Dominica	data/images/country_flags/DM.svg
+DO	DOM	214	Dominican Republic	data/images/country_flags/DO.svg
+EC	ECU	218	Ecuador	data/images/country_flags/EC.svg
+EG	EGY	818	Egypt	data/images/country_flags/EG.svg
+SV	SLV	222	El Salvador	data/images/country_flags/SV.svg
+GQ	GNQ	226	Equatorial Guinea	data/images/country_flags/GQ.svg
+ER	ERI	232	Eritrea	data/images/country_flags/ER.svg
+EE	EST	233	Estonia	data/images/country_flags/EE.svg
+SZ	SWZ	748	Eswatini	data/images/country_flags/SZ.svg
+ET	ETH	231	Ethiopia	data/images/country_flags/ET.svg
+FK	FLK	238	Falkland Islands (Malvinas)	data/images/country_flags/FK.svg
+FO	FRO	234	Faroe Islands	data/images/country_flags/FO.svg
+FJ	FJI	242	Fiji	data/images/country_flags/FJ.svg
+FI	FIN	246	Finland	data/images/country_flags/FI.svg
+FR	FRA	250	France	data/images/country_flags/FR.svg
+GF	GUF	254	French Guiana	data/images/country_flags/GF.svg
+PF	PYF	258	French Polynesia	data/images/country_flags/PF.svg
+TF	ATF	260	French Southern Territories	data/images/country_flags/TF.svg
+GA	GAB	266	Gabon	data/images/country_flags/GA.svg
+GM	GMB	270	Gambia	data/images/country_flags/GM.svg
+GE	GEO	268	Georgia	data/images/country_flags/GE.svg
+DE	DEU	276	Germany	data/images/country_flags/DE.svg
+GH	GHA	288	Ghana	data/images/country_flags/GH.svg
+GI	GIB	292	Gibraltar	data/images/country_flags/GI.svg
+GR	GRC	300	Greece	data/images/country_flags/GR.svg
+GL	GRL	304	Greenland	data/images/country_flags/GL.svg
+GD	GRD	308	Grenada	data/images/country_flags/GD.svg
+GP	GLP	312	Guadeloupe	data/images/country_flags/GP.svg
+GU	GUM	316	Guam	data/images/country_flags/GU.svg
+GT	GTM	320	Guatemala	data/images/country_flags/GT.svg
+GG	GGY	831	Guernsey	data/images/country_flags/GG.svg
+GN	GIN	324	Guinea	data/images/country_flags/GN.svg
+GW	GNB	624	Guinea-Bissau	data/images/country_flags/GW.svg
+GY	GUY	328	Guyana	data/images/country_flags/GY.svg
+HT	HTI	332	Haiti	data/images/country_flags/HT.svg
+HM	HMD	334	Heard Island and McDonald Islands	data/images/country_flags/HM.svg
+VA	VAT	336	Holy See	data/images/country_flags/VA.svg
+HN	HND	340	Honduras	data/images/country_flags/HN.svg
+HK	HKG	344	Hong Kong	data/images/country_flags/HK.svg
+HU	HUN	348	Hungary	data/images/country_flags/HU.svg
+IS	ISL	352	Iceland	data/images/country_flags/IS.svg
+IN	IND	356	India	data/images/country_flags/IN.svg
+ID	IDN	360	Indonesia	data/images/country_flags/ID.svg
+IR	IRN	364	Iran (Islamic Republic of)	data/images/country_flags/IR.svg
+IQ	IRQ	368	Iraq	data/images/country_flags/IQ.svg
+IE	IRL	372	Ireland	data/images/country_flags/IE.svg
+IM	IMN	833	Isle of Man	data/images/country_flags/IM.svg
+IL	ISR	376	Israel	data/images/country_flags/IL.svg
+IT	ITA	380	Italy	data/images/country_flags/IT.svg
+JM	JAM	388	Jamaica	data/images/country_flags/JM.svg
+JP	JPN	392	Japan	data/images/country_flags/JP.svg
+JE	JEY	832	Jersey	data/images/country_flags/JE.svg
+JO	JOR	400	Jordan	data/images/country_flags/JO.svg
+KZ	KAZ	398	Kazakhstan	data/images/country_flags/KZ.svg
+KE	KEN	404	Kenya	data/images/country_flags/KE.svg
+KI	KIR	296	Kiribati	data/images/country_flags/KI.svg
+KP	PRK	408	Korea (Democratic People's Republic of)	data/images/country_flags/KP.svg
+KR	KOR	410	Korea, Republic of	data/images/country_flags/KR.svg
+KW	KWT	414	Kuwait	data/images/country_flags/KW.svg
+KG	KGZ	417	Kyrgyzstan	data/images/country_flags/KG.svg
+LA	LAO	418	Lao People's Democratic Republic	data/images/country_flags/LA.svg
+LV	LVA	428	Latvia	data/images/country_flags/LV.svg
+LB	LBN	422	Lebanon	data/images/country_flags/LB.svg
+LS	LSO	426	Lesotho	data/images/country_flags/LS.svg
+LR	LBR	430	Liberia	data/images/country_flags/LR.svg
+LY	LBY	434	Libya	data/images/country_flags/LY.svg
+LI	LIE	438	Liechtenstein	data/images/country_flags/LI.svg
+LT	LTU	440	Lithuania	data/images/country_flags/LT.svg
+LU	LUX	442	Luxembourg	data/images/country_flags/LU.svg
+MO	MAC	446	Macao	data/images/country_flags/MO.svg
+MG	MDG	450	Madagascar	data/images/country_flags/MG.svg
+MW	MWI	454	Malawi	data/images/country_flags/MW.svg
+MY	MYS	458	Malaysia	data/images/country_flags/MY.svg
+MV	MDV	462	Maldives	data/images/country_flags/MV.svg
+ML	MLI	466	Mali	data/images/country_flags/ML.svg
+MT	MLT	470	Malta	data/images/country_flags/MT.svg
+MH	MHL	584	Marshall Islands	data/images/country_flags/MH.svg
+MQ	MTQ	474	Martinique	data/images/country_flags/MQ.svg
+MR	MRT	478	Mauritania	data/images/country_flags/MR.svg
+MU	MUS	480	Mauritius	data/images/country_flags/MU.svg
+YT	MYT	175	Mayotte	data/images/country_flags/YT.svg
+MX	MEX	484	Mexico	data/images/country_flags/MX.svg
+FM	FSM	583	Micronesia (Federated States of)	data/images/country_flags/FM.svg
+MD	MDA	498	Moldova, Republic of	data/images/country_flags/MD.svg
+MC	MCO	492	Monaco	data/images/country_flags/MC.svg
+MN	MNG	496	Mongolia	data/images/country_flags/MN.svg
+ME	MNE	499	Montenegro	data/images/country_flags/ME.svg
+MS	MSR	500	Montserrat	data/images/country_flags/MS.svg
+MA	MAR	504	Morocco	data/images/country_flags/MA.svg
+MZ	MOZ	508	Mozambique	data/images/country_flags/MZ.svg
+MM	MMR	104	Myanmar	data/images/country_flags/MM.svg
+NA	NAM	516	Namibia	data/images/country_flags/NA.svg
+NR	NRU	520	Nauru	data/images/country_flags/NR.svg
+NP	NPL	524	Nepal	data/images/country_flags/NP.svg
+NL	NLD	528	Netherlands	data/images/country_flags/NL.svg
+NC	NCL	540	New Caledonia	data/images/country_flags/NC.svg
+NZ	NZL	554	New Zealand	data/images/country_flags/NZ.svg
+NI	NIC	558	Nicaragua	data/images/country_flags/NI.svg
+NE	NER	562	Niger	data/images/country_flags/NE.svg
+NG	NGA	566	Nigeria	data/images/country_flags/NG.svg
+NU	NIU	570	Niue	data/images/country_flags/NU.svg
+NF	NFK	574	Norfolk Island	data/images/country_flags/NF.svg
+MK	MKD	807	North Macedonia	data/images/country_flags/MK.svg
+MP	MNP	580	Northern Mariana Islands	data/images/country_flags/MP.svg
+NO	NOR	578	Norway	data/images/country_flags/NO.svg
+OM	OMN	512	Oman	data/images/country_flags/OM.svg
+PK	PAK	586	Pakistan	data/images/country_flags/PK.svg
+PW	PLW	585	Palau	data/images/country_flags/PW.svg
+PS	PSE	275	Palestine, State of	data/images/country_flags/PS.svg
+PA	PAN	591	Panama	data/images/country_flags/PA.svg
+PG	PNG	598	Papua New Guinea	data/images/country_flags/PG.svg
+PY	PRY	600	Paraguay	data/images/country_flags/PY.svg
+PE	PER	604	Peru	data/images/country_flags/PE.svg
+PH	PHL	608	Philippines	data/images/country_flags/PH.svg
+PN	PCN	612	Pitcairn	data/images/country_flags/PN.svg
+PL	POL	616	Poland	data/images/country_flags/PL.svg
+PT	PRT	620	Portugal	data/images/country_flags/PT.svg
+PR	PRI	630	Puerto Rico	data/images/country_flags/PR.svg
+QA	QAT	634	Qatar	data/images/country_flags/QA.svg
+RE	REU	638	Réunion	data/images/country_flags/RE.svg
+RO	ROU	642	Romania	data/images/country_flags/RO.svg
+RU	RUS	643	Russian Federation	data/images/country_flags/RU.svg
+RW	RWA	646	Rwanda	data/images/country_flags/RW.svg
+BL	BLM	652	Saint Barthélemy	data/images/country_flags/BL.svg
+SH	SHN	654	Saint Helena, Ascension and Tristan da Cunha	data/images/country_flags/SH.svg
+KN	KNA	659	Saint Kitts and Nevis	data/images/country_flags/KN.svg
+LC	LCA	662	Saint Lucia	data/images/country_flags/LC.svg
+MF	MAF	663	Saint Martin (French part)	data/images/country_flags/MF.svg
+PM	SPM	666	Saint Pierre and Miquelon	data/images/country_flags/PM.svg
+VC	VCT	670	Saint Vincent and the Grenadines	data/images/country_flags/VC.svg
+WS	WSM	882	Samoa	data/images/country_flags/WS.svg
+SM	SMR	674	San Marino	data/images/country_flags/SM.svg
+ST	STP	678	Sao Tome and Principe	data/images/country_flags/ST.svg
+SA	SAU	682	Saudi Arabia	data/images/country_flags/SA.svg
+SN	SEN	686	Senegal	data/images/country_flags/SN.svg
+RS	SRB	688	Serbia	data/images/country_flags/RS.svg
+SC	SYC	690	Seychelles	data/images/country_flags/SC.svg
+SL	SLE	694	Sierra Leone	data/images/country_flags/SL.svg
+SG	SGP	702	Singapore	data/images/country_flags/SG.svg
+SX	SXM	534	Sint Maarten (Dutch part)	data/images/country_flags/SX.svg
+SK	SVK	703	Slovakia	data/images/country_flags/SK.svg
+SI	SVN	705	Slovenia	data/images/country_flags/SI.svg
+SB	SLB	090	Solomon Islands	data/images/country_flags/SB.svg
+SO	SOM	706	Somalia	data/images/country_flags/SO.svg
+ZA	ZAF	710	South Africa	data/images/country_flags/ZA.svg
+GS	SGS	239	South Georgia and the South Sandwich Islands	data/images/country_flags/GS.svg
+SS	SSD	728	South Sudan	data/images/country_flags/SS.svg
+ES	ESP	724	Spain	data/images/country_flags/ES.svg
+LK	LKA	144	Sri Lanka	data/images/country_flags/LK.svg
+SD	SDN	729	Sudan	data/images/country_flags/SD.svg
+SR	SUR	740	Suriname	data/images/country_flags/SR.svg
+SJ	SJM	744	Svalbard and Jan Mayen	data/images/country_flags/SJ.svg
+SE	SWE	752	Sweden	data/images/country_flags/SE.svg
+CH	CHE	756	Switzerland	data/images/country_flags/CH.svg
+SY	SYR	760	Syrian Arab Republic	data/images/country_flags/SY.svg
+TW	TWN	158	Taiwan, Province of China	data/images/country_flags/TW.svg
+TJ	TJK	762	Tajikistan	data/images/country_flags/TJ.svg
+TZ	TZA	834	Tanzania, United Republic of	data/images/country_flags/TZ.svg
+TH	THA	764	Thailand	data/images/country_flags/TH.svg
+TL	TLS	626	Timor-Leste	data/images/country_flags/TL.svg
+TG	TGO	768	Togo	data/images/country_flags/TG.svg
+TK	TKL	772	Tokelau	data/images/country_flags/TK.svg
+TO	TON	776	Tonga	data/images/country_flags/TO.svg
+TT	TTO	780	Trinidad and Tobago	data/images/country_flags/TT.svg
+TN	TUN	788	Tunisia	data/images/country_flags/TN.svg
+TR	TUR	792	Turkey	data/images/country_flags/TR.svg
+TM	TKM	795	Turkmenistan	data/images/country_flags/TM.svg
+TC	TCA	796	Turks and Caicos Islands	data/images/country_flags/TC.svg
+TV	TUV	798	Tuvalu	data/images/country_flags/TV.svg
+UG	UGA	800	Uganda	data/images/country_flags/UG.svg
+UA	UKR	804	Ukraine	data/images/country_flags/UA.svg
+AE	ARE	784	United Arab Emirates	data/images/country_flags/AE.svg
+GB	GBR	826	United Kingdom of Great Britain and Northern Ireland	data/images/country_flags/GB.svg
+US	USA	840	United States of America	data/images/country_flags/US.svg
+UM	UMI	581	United States Minor Outlying Islands	data/images/country_flags/UM.svg
+UY	URY	858	Uruguay	data/images/country_flags/UY.svg
+UZ	UZB	860	Uzbekistan	data/images/country_flags/UZ.svg
+VU	VUT	548	Vanuatu	data/images/country_flags/VU.svg
+VE	VEN	862	Venezuela (Bolivarian Republic of)	data/images/country_flags/VE.svg
+VN	VNM	704	Viet Nam	data/images/country_flags/VN.svg
+VG	VGB	092	Virgin Islands (British)	data/images/country_flags/VG.svg
+VI	VIR	850	Virgin Islands (U.S.)	data/images/country_flags/VI.svg
+WF	WLF	876	Wallis and Futuna	data/images/country_flags/WF.svg
+EH	ESH	732	Western Sahara	data/images/country_flags/EH.svg
+YE	YEM	887	Yemen	data/images/country_flags/YE.svg
+ZM	ZMB	894	Zambia	data/images/country_flags/ZM.svg
+ZW	ZWE	716	Zimbabwe	data/images/country_flags/ZW.svg

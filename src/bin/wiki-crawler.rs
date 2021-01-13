@@ -10,8 +10,8 @@ const DIR_DATA_COUNTRY_FLAGS: &str = "data/images/country_flags";
 const DIR_DATA_TERRITORY_FLAGS: &str = "data/images/territory_flags";
 
 use scraper::{Html, Selector, ElementRef};
-use std::{fs, io};
-use std::fs::File;
+use std::{fs, io, thread, time};
+use std::fs::{File, OpenOptions};
 use std::io::{Write, BufRead};
 use std::path::Path;
 use chrono::{DateTime, Utc, TimeZone, Duration};
@@ -137,38 +137,94 @@ fn download_flag(svg_file: &String, flag: ElementRef) {
     let flag_url = flag.value().attr("src").unwrap();
     let parts  = flag_url.split('/').collect::<Vec<&str>>();
     let svg_url = format!("{}/{}/{}/{}", URL_WIKI_COMMONS, parts[6], parts[7], parts[8]);
-    let svg = attohttpc::get(svg_url).send().unwrap();
-    fs::write(svg_file, svg.text().unwrap());
+    let svg = attohttpc::get(&svg_url).send().unwrap();
+    if !svg.is_success() {
+        println!("--- Failed to retrieve flag: {}", svg_url);
+        return;
+    }
+
+    let ext = Path::new(&svg_url).extension();
+    if ext.is_none() || ext.unwrap() != "svg" {
+        return;
+    }
+
+    fs::write(svg_file, svg.text_utf8().unwrap());
 }
 
 fn crawl_territories(country_codes: Vec<String>) {
     println!("Processing territories...");
-    let code = "CA";
+    let path = Path::new(FILE_DATA_TERRITORY);
+    if !path.exists() {
+        let mut territories_file = File::create(path).unwrap();
+        territories_file.write("country\talpha2\tname\tflag\n".as_bytes());
+    }
 
+    // MR
+    for code in country_codes {
+        crawl_territory(&code);
+    }
+}
+
+fn remove_territory(country_code: &str) {
+    let path_tmp = format!("{}.tmp", FILE_DATA_TERRITORY);
+    let mut file_new = File::create(&path_tmp).unwrap();
+    let file_current = File::open(FILE_DATA_TERRITORY).unwrap();
+    for line in io::BufReader::new(file_current).lines() {
+        if let Ok(csv_line) = line {
+            let mut parts = csv_line.split('\t');
+            let line_code = parts.next().unwrap();
+            if line_code != country_code {
+                file_new.write(format!("{}\n", csv_line).as_bytes());
+            }
+        }
+    }
+
+    fs::remove_file(FILE_DATA_TERRITORY);
+    fs::rename(path_tmp, FILE_DATA_TERRITORY);
+}
+
+fn crawl_territory(code: &str) {
     let response  = attohttpc::get(format!("{}:{}", URL_WIKI_ISO_3166_2, code)).send().unwrap();
     let html = Html::parse_fragment(&response.text().unwrap());
     let last_modified_file = format!("{}_{}", FILE_LAST_MOD_TERRITORY, code.to_lowercase());
-    let last_modified = get_page_last_modified(format!("ISO-3166-2:{}", code).as_str(), &wiki_page);
+    let last_modified = get_page_last_modified(format!("ISO-3166-2:{}", code).as_str(), &html);
     if !should_crawl(last_modified, last_modified_file.as_str()) {
+        println!("ISO-3166-2:{} is up to date, skipping...", code);
         return;
     }
 
-    let selector_table = Selector::parse("table.wikitable tbody tr").unwrap();
-    let selector_flag = Selector::parse("td:nth-child(1) span img").unwrap();
-    let selector_name = Selector::parse("td:nth-child(1) a").unwrap();
-    let selector_alpha2 = Selector::parse("td:nth-child(2) a span").unwrap();
     let path = Path::new(FILE_DATA_TERRITORY);
     if path.exists() {
-        cleanup_territory(&path)
+        remove_territory(code);
     }
 
-    let mut territories_file = File::create(path).unwrap();
-    territories_file.write("alpha2\tname\tflag\n".as_bytes());
-    for row in html.select(&selector_table) {
-        let name = row.select(&selector_name).next().unwrap().inner_html();
-        let code = row.select(&selector_alpha2).next().unwrap().inner_html();
+    let selector_table = Selector::parse("table.wikitable.sortable tbody tr").unwrap();
+    let selector_flag = Selector::parse("td:nth-child(2) img").unwrap();
+    let selector_name = Selector::parse("td:nth-child(2)").unwrap();
+    let selector_alpha2 = Selector::parse("td:nth-child(1)").unwrap();
 
-        println!("{} {}", code, name);
+    let mut territories_file = OpenOptions::new().append(true).open(path).unwrap();
+    for row in html.select(&selector_table) {
+        if row.select(&Selector::parse("td").unwrap()).next().is_none() {
+            continue;
+        }
+
+        let next_name = row.select(&selector_name).next();
+        let next_code = row.select(&selector_alpha2).next();
+        if next_name.is_none() || next_code.is_none() {
+            continue;
+        }
+
+        let name = next_name.unwrap().text().collect::<Vec<_>>().join("").replace('\n', "").replace("\u{a0}", "");
+        let code = next_code.unwrap().text().collect::<Vec<_>>().join("").replace('\n', "").replace("\u{a0}", "");
+        let mut parts = code.split('-');
+        let country = parts.next().unwrap();
+        let alpha2 = parts.next();
+        if alpha2.is_none() {
+            continue;
+        }
+
+        println!("{:?} {:?}", code, name);
         let mut flag_filename = String::from("");
         let img = row.select(&selector_flag).next();
         if let Some(flag) = img {
@@ -176,13 +232,10 @@ fn crawl_territories(country_codes: Vec<String>) {
             download_flag(&flag_filename, flag);
         }
 
-        let csv_line = format!("{}\t{}\t{}\n", code, name, flag_filename);
-        territories_file.write(csv_line.as_bytes());
+        let line = format!("{}\t{}\t{}\t{}\n", country, alpha2.unwrap(), name, flag_filename);
+        territories_file.write(line.as_bytes());
     }
 
     fs::write(last_modified_file, last_modified.to_rfc3339());
-}
-
-fn cleanup_territory(file: &Path) {
-
+    thread::sleep(time::Duration::from_millis(150));
 }

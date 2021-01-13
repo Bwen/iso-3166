@@ -7,5 +7,5 @@ pub use alpha3::Alpha3;
 mod numeric;
 pub use numeric::Numeric;
 
-mod tld;
-pub use tld::Tld;
+mod info;
+pub use info::Info;

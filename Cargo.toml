@@ -6,22 +6,28 @@ edition = "2018"
 
 [dependencies]
 strum = "0.18"
-strum_macros = "0.18"
+strum_macros = "0.20"
+grep-regex = { version = "0.1" }
+grep-searcher = { version = "0.1" }
 
 attohttpc = { version = "0.15", optional = true }
 scraper = { version = "0.12", optional = true }
 chrono = { version = "0.4", optional = true }
 
-grep-searcher = { version = "0.1", optional = true }
-grep-regex = { version = "0.1", optional = true }
 grep-matcher = { version = "0.1", optional = true }
 
 [features]
 default = []
 
-updater = ["attohttpc", "scraper", "chrono"]
+crawler = ["attohttpc", "scraper", "chrono"]
+updater = ["grep-matcher"]
 
 [[bin]]
 name = "wiki-crawler"
 path = "src/bin/wiki-crawler.rs"
+required-features = ["crawler"]
+
+[[bin]]
+name = "update-enums"
+path = "src/bin/update-enums.rs"
 required-features = ["updater"]
