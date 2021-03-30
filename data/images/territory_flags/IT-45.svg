@@ -12,7 +12,7 @@
    viewBox="0 0 850.63762 523.55048"
    height="523.55048"
    width="850.63763"
-   sodipodi:docname="Fictional Emilia-Romagna Flag.svg"
+   sodipodi:docname="Fictional_Emilia-Romagna_Flag.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -32,8 +32,8 @@
      fit-margin-right="15"
      fit-margin-bottom="15"
      inkscape:zoom="2.1163193"
-     inkscape:cx="425.31882"
-     inkscape:cy="261.77524"
+     inkscape:cx="237.72898"
+     inkscape:cy="223.97376"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
@@ -57,7 +57,7 @@
      id="title839">
  Flag of Emilia-Romagna</title>
   <rect
-     style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:5.01585484;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.01585484;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647"
      id="rect942"
      width="850.06073"
      height="524.02301"
@@ -72,11 +72,11 @@
        style="fill:none;fill-rule:evenodd;stroke:#009a49;stroke-width:5.78188372;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#009a49;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter"
-       id="path845"
-       d="M 175.52906,201.5017 568.27635,399.99639 V 107.4779 l -390.49097,18.82533 z"
+       sodipodi:nodetypes="cccsscc"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+       d="m 178.80495,188.90743 386.58323,205.49488 0.14144,-304.822499 c 0,0 -46.45653,17.889689 -101.54591,15.537999 C 402.07795,102.47512 329.06907,79.720449 294.91449,83.055958 230.36606,89.359724 179.29905,108.76471 179.29905,108.76471 Z"
+       id="path845-0"
+       style="fill:#009a49;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter" />
   </g>
   <g
      id="g936"

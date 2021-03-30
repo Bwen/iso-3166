@@ -122,8 +122,13 @@ fn crawl_countries(html: Html) -> Vec<String> {
 
         println!("{} {}", alpha2, name);
         // TODO: Download emblems
-        let flag_filename = format!("{}/{}.svg", DIR_DATA_COUNTRY_FLAGS, alpha2);
-        download_flag(&flag_filename, row.select(&selector_flag).next().unwrap());
+        let mut flag_filename = format!("{}/{}.svg", DIR_DATA_COUNTRY_FLAGS, alpha2);
+        let flag = row.select(&selector_flag).next();
+        if flag.is_some() {
+            download_flag(&flag_filename, flag.unwrap());
+        } else {
+            flag_filename = String::from("");
+        }
 
         let csv_line = format!("{}\t{}\t{}\t{}\t{}\n", alpha2, alpha3, numeric, name, flag_filename);
         countries_file.write(csv_line.as_bytes());
