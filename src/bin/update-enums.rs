@@ -8,13 +8,50 @@ use std::fs;
 use std::fs::File;
 use std::io::Error;
 
-const DATA_COUNTRYINFO_FILE: &str = "data/countries.csv";
-const ISO_31661_FILE: &str = "src/country/alpha2.rs";
-const ISO_31662_FILE: &str = "src/country/alpha3.rs";
+const DATA_COUNTRY_FILE: &str = "data/countries.csv";
+const ISO_3166_ALPHA2_FILE: &str = "src/country/alpha2.rs";
+const ISO_3166_ALPHA3_FILE: &str = "src/country/alpha3.rs";
 const ISO_3166_FIPS_FILE: &str = "src/country/numeric.rs";
 
+const DATA_TERRITORY_FILE: &str = "data/territories.csv";
+const ISO_31662_CODE_FILE: &str = "src/territory/code.rs";
+
 fn main() {
-    update_country_enums();
+    // update_country_enums();
+    update_territory_enums();
+}
+
+fn update_territory_enums() {
+    let regex = "(?m)^([A-Z]{2})\t([a-zA-Z0-9]{1,3})\t(.*)\t(.*)";
+    let matcher = RegexMatcher::new_line_matcher(regex).unwrap();
+    let mut captures = matcher.new_captures().unwrap();
+
+    let mut matches: Vec<Vec<String>> = vec![vec![], vec![], vec![]];
+    Searcher::new()
+        .search_path(
+            &matcher,
+            DATA_TERRITORY_FILE,
+            UTF8(|_, line| {
+                matcher.captures(line.as_bytes(), &mut captures);
+                matches[0].push(format!(
+                    "{}_{}",
+                    line[captures.get(1).unwrap()].to_string(),
+                    line[captures.get(2).unwrap()].to_string()
+                )); // Country Alpha2 & Territory Code
+                // matches[1].push(line[captures.get(3).unwrap()].to_string()); // Name
+                // matches[2].push(line[captures.get(4).unwrap()].to_string()); // Flag
+
+                Ok(true)
+            }),
+        )
+        .unwrap();
+
+    for results in &mut matches {
+        results.sort();
+        results.dedup();
+    }
+
+    update_enum_file(&matches[0], ISO_31662_CODE_FILE);
 }
 
 fn update_country_enums() {
@@ -26,7 +63,7 @@ fn update_country_enums() {
     Searcher::new()
         .search_path(
             &matcher,
-            DATA_COUNTRYINFO_FILE,
+            DATA_COUNTRY_FILE,
             UTF8(|_, line| {
                 matcher.captures(line.as_bytes(), &mut captures);
                 matches[0].push(line[captures.get(1).unwrap()].to_string()); // Alpha2
@@ -44,8 +81,8 @@ fn update_country_enums() {
         results.dedup();
     }
 
-    update_enum_file(&matches[0], ISO_31661_FILE);
-    update_enum_file(&matches[1], ISO_31662_FILE);
+    update_enum_file(&matches[0], ISO_3166_ALPHA2_FILE);
+    update_enum_file(&matches[1], ISO_3166_ALPHA3_FILE);
     update_enum_file(&matches[2], ISO_3166_FIPS_FILE);
 }
 

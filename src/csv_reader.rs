@@ -15,7 +15,7 @@ impl<'b> From<&str> for CsvReader<'b>  {
         let data_file = format!("{}/{}", env_path, filename);
         let path = Path::new(&data_file);
         if !path.exists() {
-            panic!(format!("The file name {:?} does not exists in ISO_DATA_DIR: {}", filename, data_file))
+            panic!("The file name {:?} does not exists in ISO_DATA_DIR: {}", filename, data_file)
         }
 
         let matcher = RegexMatcher::new_line_matcher(r"(?m)^[^#]").expect("Invalid Regexp");

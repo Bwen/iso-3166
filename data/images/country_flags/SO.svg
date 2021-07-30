@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="600" viewBox="0 0 81 54">
-<rect fill="#4189DD" width="81" height="54"/>
+<path d="m0 0h81v54h-81z" fill="#4189dd"/>
 <g transform="translate(40.5 27) scale(13)">
 <g id="t">
-<polygon id="w" fill="#FFF" points="0,0 0,1 .5,1" transform="translate(0 -1) rotate(18)"/>
+<path id="w" fill="#fff" d="m0 0v1h0.5z" transform="translate(0 -1) rotate(18)"/>
 <use xlink:href="#w" transform="scale(-1 1)"/>
 </g>
+<g id="v">
 <use xlink:href="#t" transform="rotate(72)"/>
-<use xlink:href="#t" transform="rotate(-72)"/>
 <use xlink:href="#t" transform="rotate(144)"/>
-<use xlink:href="#t" transform="rotate(-144)"/>
+</g>
+<use xlink:href="#v" transform="rotate(144)"/>
 </g>
 </svg>

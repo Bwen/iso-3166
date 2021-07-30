@@ -47,6 +47,9 @@ fn all_iterator() {
     let mut found = 0;
     let countries = Info::all();
     for country in countries {
+        assert_ne!(country.alpha2, Alpha2::None, "No Country Alpha2 should be Alpha2::None");
+        assert_ne!(country.alpha3, Alpha3::None, "No Territory Alpha3 should be Alpha3::None");
+
         if country.alpha2.as_ref() == "CA" {
             found += 1;
             assert_eq!(country.name, "Canada");
